@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Waves</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+	<link href="main.css" type="text/css" rel="stylesheet" />
+	<link href="waves.min.css" type="text/css" rel="stylesheet" />
+	<script src="waves.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	window.onload = function(){
+
+		Waves.init();
+	};
+	</script>
+</head>
+<body>
+	<div id="page">
+		<h1>Примеры</h1>
+		<div id="box-button" class="box">
+			<h2>Buttons</h2>
+			<p class="text-center">
+				<a class="flat-buttons">
+					Button A
+				</a>
+				<button class="flat-buttons">
+					Button B
+				</button>
+				<input class="flat-buttons" type="submit" value="Button C">
+			</p>
+			<p id="colored-button" class="text-center">
+				<a class="btn float-buttons">
+					Button A
+				</a>
+				<button class="btn float-button-light">
+					Button B
+				</button>
+				<input class="btn float-buttons" type="submit" value="Button C">
+			</p>
+		</div>
+		<script type="text/javascript">
+			Waves.attach(".flat-buttons", [
+				"waves-button"
+			]);
+			Waves.attach(".float-buttons", [
+				"waves-button",
+				"waves-float"
+			]);
+			Waves.attach(".float-button-light", [
+				"waves-button",
+				"waves-float",
+				"waves-light"
+			]);
+		</script>
+		<div id="box-icon" class="box">
+			<h2>Icons</h2>
+			<p class="text-center">
+				<i class="fa fa-bars flat-icon"></i>
+				<i class="fa fa-bookmark flat-icon"></i>
+				<i class="fa fa-calendar flat-icon"></i>
+				<i class="fa fa-envelope flat-icon"></i>
+				<i class="fa fa-exclamation flat-icon"></i>
+				<i class="fa fa-folder flat-icon"></i>
+			</p>
+			<p id="colored-icon" class="text-center">
+				<i class="fa fa-bars float-icon"></i>
+				<i class="fa fa-bookmark float-icon-light"></i>
+				<i class="fa fa-calendar float-icon"></i>
+				<i class="fa fa-envelope float-icon-light"></i>
+				<i class="fa fa-exclamation float-icon"></i>
+				<i class="fa fa-folder float-icon-light"></i>
+			</p>
+		</div>
+		<script type="text/javascript">
+			Waves.attach(".flat-icon", [
+				"waves-circle"
+			]);
+			Waves.attach(".float-icon", [
+				"waves-circle",
+				"waves-float"
+			]);
+			Waves.attach(".float-icon-light", [
+				"waves-circle",
+				"waves-float",
+				"waves-light"
+			]);
+		</script>
+		<div id="box-other" class="box">
+			<h2>DIVs &amp; Images</h2>
+			<div class="boxes flat-box">Flat Box</div>
+			<div class="boxes float-box">Float Box</div>
+			<p class="text-center">
+				<img class="waves-image" src="https://farm2.staticflickr.com/1297/1091511802_2fb2451ecc_n.jpg">
+			</p>
+		</div>
+		<script type="text/javascript">
+			Waves.attach(".flat-box", [
+				"waves-block"
+			]);
+			Waves.attach(".float-box", [
+				"waves-block",
+				"waves-float"
+			]);
+			Waves.attach(".waves-image");
+		</script>
+	</div>
+</body>
+</html>
